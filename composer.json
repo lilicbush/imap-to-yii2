@@ -7,6 +7,8 @@
     "extension",
     "imap"
   ],
+  "prefer-stable": true,
+  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
