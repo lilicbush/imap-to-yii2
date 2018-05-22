@@ -215,7 +215,7 @@ class ImapMessage extends MessagePart
 
     public function delete()
     {
-        imap_delete($this->getImap()->getStream(), $this->getUid(), FT_UID);
+        return imap_delete($this->getImap()->getStream(), $this->getUid(), FT_UID);
     }
 
     public function getImap()
@@ -295,7 +295,7 @@ class ImapMessage extends MessagePart
 
     public function move($folder)
     {
-        return imap_mail_move($this->getImap()->getStream(), $this->getUid(), $folder);
+        return imap_mail_move($this->getImap()->getStream(), "{$this->getUid()}", $folder, CP_UID);
     }
 
 }
