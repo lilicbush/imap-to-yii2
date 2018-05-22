@@ -7,8 +7,6 @@
     "extension",
     "imap"
   ],
-  "prefer-stable": true,
-  "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
     {
@@ -17,11 +15,14 @@
     }
   ],
   "require": {
+    "php": ">=5.5",
     "yiisoft/yii2": "*"
   },
   "autoload": {
     "psr-4": {
       "lilicbush\\imap\\": ""
     }
-  }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
 }
