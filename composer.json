@@ -1,0 +1,25 @@
+{
+  "name": "lilicbush/imap-to-yii2",
+  "description": "Extended Imap agent component for Yii2 (camohob/yii2-imap)",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "imap"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lilicbush",
+      "email": "lilicbush@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "lilicbush\\imap\\": ""
+    }
+  }
+}
