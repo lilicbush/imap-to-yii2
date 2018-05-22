@@ -293,13 +293,9 @@ class ImapMessage extends MessagePart
         return $this->getOverview()->msgno;
     }
 
-
     public function move($folder)
     {
         imap_mail_move($this->getImap()->getStream(), $this->getUid(), $folder);
-        imap_expunge($this->getImap()->getStream());
-
-        //imap_delete($this->getImap()->getStream(), $this->getUid(), FT_UID);
     }
 
 }
